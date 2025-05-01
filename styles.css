@@ -238,7 +238,7 @@ header.sticky{
 }
 
 .reviews img{
-    width: 100%;
+    width: 50%;
     height: auto;
     border-radius: 50px;
     margin: 10px 0;
@@ -270,14 +270,14 @@ header.sticky{
 }
 
 .cart img{
-    width: 380px;
+    width: 350px;
     height: auto;
     border-radius: 5px;
 }
 
 .update-cart{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(380px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
     gap: 1rem;
 }
 
