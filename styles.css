@@ -270,14 +270,14 @@ header.sticky{
 }
 
 .cart img{
-    width: 380px;
+    width: 360px;
     height: auto;
     border-radius: 5px;
 }
 
 .update-cart{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(380px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(360px, auto));
     gap: 1rem;
 }
 
@@ -316,6 +316,7 @@ header.sticky{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(160px, auto));
     gap: 3rem;
+
 }
 .first-info img{
     width: 140px;
