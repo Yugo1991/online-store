@@ -310,6 +310,9 @@ header.sticky{
 
 .contact{
     background-color: #f3f4f6;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(160px, auto)); */
+    /* gap: 3rem; */
 }
 
 .contact-info{
@@ -323,7 +326,7 @@ header.sticky{
     height: auto;
 }
 
-.contact-info h5{
+.contact-info h4{
     color: #212529;
     font-size: 14px;
     text-transform: uppercase;
