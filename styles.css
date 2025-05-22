@@ -28,7 +28,7 @@ header{
 }
 
 .navmenu a {
-    color: white;
+    color: black;
     font-size: 16px;
     text-transform: capitalize;
     padding: 10px 20px;
@@ -37,7 +37,7 @@ header{
 }
 
 .navmenu a:hover{
-    color: pink
+    color: white;
 }
 
 .nav-icon{
@@ -54,8 +54,16 @@ header{
 }
 
 .nav-icon i:hover{
-    color: pink;
+    color: black;
     transform: scale(1.1);
+}
+
+
+
+.hamburger{
+    display: none;
+    font-size: 1.8em;
+    cursor: pointer;
 }
 
 #menu-icon{
@@ -131,9 +139,76 @@ section{
     vertical-align: middle;
 }
 
-
-.about-text h2{
+#about h2{
     color: #fff;
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+
+#about {
+  padding: 100px;
+  text-align: center;
+  background-color: #967bb6;
+}
+
+#about p {
+    display: inline-block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px; 
+}
+
+
+.slideshow-container {
+  max-width: 700px;
+  margin: auto;
+  position: relative;
+  height: 450px;
+  overflow: hidden;
+  padding: 50px;
+  padding-top: 150px;
+  list-style: none;
+  text-decoration: none;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 3s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.slide img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.slide p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.caption {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  font-size: 1.1rem;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 
@@ -416,5 +491,12 @@ header.sticky{
     }
     .navmenu.open{
         right: 0;
+    }
+
+    .hamburger{
+        display: block;
+        color: #fff;
+        font-size: 30px;
+        cursor: pointer;
     }
 }
