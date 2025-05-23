@@ -59,7 +59,7 @@ header{
 }
 
 
-.hamburger-icon hover{
+.hamburger-icon i:hover{
     color: white;
     transform: scale(1.1);
 }
@@ -163,7 +163,7 @@ section{
 }
 
 .main-text h5{
-    color: purple;
+    color: white;
     font-size: 16px;
     text-transform: capitalize;
     font-weight: 500;
@@ -264,7 +264,7 @@ section{
 
 .slide p {
   font-size: 1.1rem;
-  color: #333;
+  color: #fff;
 }
 
 .caption {
