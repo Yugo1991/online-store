@@ -14,19 +14,41 @@ window.addEventListener ("scroll", function(){
 let navmenu = document.querySelector('.navmenu');
 
 let slideIndex = 0;
-const slides = document.querySelectorAll(".slide");
+const mainSlides = document.querySelectorAll(".slide");
 
 function showSlides() {
-  slides.forEach(slide => slide.classList.remove("active"));
+  mainSlides.forEach(slide => slide.classList.remove("active"));
 
   slideIndex++;
-  if (slideIndex > slides.length) slideIndex = 1;
+  if (slideIndex > mainSlides.length) slideIndex = 1;
 
-  slides[slideIndex - 1].classList.add("active");
+  mainSlides[slideIndex - 1].classList.add("active");
   setTimeout(showSlides, 4000); // Change every 4 seconds
 }
 
 document.addEventListener("DOMContentLoaded", showSlides);
 
+const reviewSlides = document.querySelectorAll('.review-slide');
+let current = 0;
 
+function showSlide(index) {
+  reviewSlides.forEach((slide, i) => {
+    slide.classList.toggle('active', i === index);
+  });
+}
 
+document.getElementById('prev').addEventListener('click', () => {
+  current = (current - 1 + reviewSlides.length) % reviewSlides.length;
+  showSlide(current);
+});
+
+document.getElementById('next').addEventListener('click', () => {
+  current = (current + 1) % reviewSlides.length;
+  showSlide(current);
+});
+
+// Optional: Auto-play
+// setInterval(() => {
+//   current = (current + 1) % reviewSlides.length;
+//   showSlide(current);
+// }, 5000);

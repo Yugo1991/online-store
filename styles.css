@@ -227,7 +227,50 @@ section{
     margin-inline-end: 0px; 
 }
 
+ #reviews .slideshow-container {
+  position: relative;
+  padding: 120px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-radius: 10px;
+  transition: opacity 3s ease-in-out;
+}
 
+
+.review-slide {
+  display: none;
+}
+
+.review-slide.active {
+  display: block;
+}
+
+#reviews .slideshow-container h1 {
+  font-size: 2rem;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+button {
+  position: relative;
+  background: #967bb6;
+  color: black;
+  border: none;
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 20px;
+  top: 20%;
+}
+
+#prev {
+  left: -30px;
+}
+
+#next {
+  right: -30px;
+}
 
 .slideshow-container {
   max-width: 700px;
