@@ -253,23 +253,25 @@ section{
 }
 
 button {
-  position: relative;
+  position: absolute;
   background: #967bb6;
   color: black;
   border: none;
   padding: 20px;
   cursor: pointer;
-  border-radius: 50%;
+  border-radius: 30%;
   font-size: 20px;
-  top: 20%;
+  top: 60%;
 }
 
 #prev {
-  left: -30px;
+  left: 50px;
+  position: absolute;;
 }
 
 #next {
-  right: -30px;
+  right: 50px;
+  position: absolute;
 }
 
 .slideshow-container {
