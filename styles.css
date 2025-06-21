@@ -252,6 +252,22 @@ section{
   margin-bottom: 20px;
 }
 
+.headshot-container {
+  width: 100px; /* Adjust size as needed */
+  height: 100px; /* Adjust size as needed */
+  border-radius: 50%; /* Make the container round */
+  overflow: hidden; /* Clip the image to the container's shape */
+  border: 5px solid #ccc; /* Add a border (adjust thickness and color) */
+  margin: auto;
+}
+
+.headshot-container img {
+  display: block; /* To ensure proper sizing within the container */
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio and fill the container */
+}
+
 button {
   position: absolute;
   background: #967bb6;
@@ -261,12 +277,12 @@ button {
   cursor: pointer;
   border-radius: 30%;
   font-size: 20px;
-  top: 60%;
+  top: 40%;
 }
 
 #prev {
   left: 50px;
-  position: absolute;;
+  position: absolute;
 }
 
 #next {
